@@ -22,6 +22,7 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
+	
 }
 #header h1 a {
 }
@@ -55,12 +56,28 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: #CCC;
 }
+h2 h3 h4{
+	font-size: 1.5rem;
+}
+h2{
+	color: blue;
+}
+h3{
+	color: pink;
+}
+h4{
+	color:yellow;
+}
 #content {
 	margin: 20px;
 }
 #content p {
 	margin-top: 5px;
 	margin-bottom: 15px;
+}
+.alert{
+	background-color: #b00b69;
+	color: blue;
 }
 #footer {
 	background-color: #000;
