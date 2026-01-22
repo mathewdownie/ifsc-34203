@@ -21,11 +21,21 @@ body {
 	margin-top: 20px;
 	border: 1px solid #CCC;
 }
+
+/* -------------------------------------------- Header --------------------------------------------------- */
 #header {
-	
+	background-image: url("../resources/assessment-2.jpg");
+	background-repeat: repeat-x;
+	height:140px;
 }
 #header h1 a {
+	display:block;
+	height: 140px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
 }
+/* -------------------------------------------- Navagation ----------------------------------------------- */
 #nav {
 	background-color: #000;
 }
@@ -56,6 +66,8 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: #CCC;
 }
+
+/* -------------------------------------------- Content --------------------------------------------------- */
 h2 h3 h4{
 	font-size: 1.5rem;
 }
@@ -79,6 +91,8 @@ h4{
 	background-color: #b00b69;
 	color: blue;
 }
+
+/* -------------------------------------------- Footer --------------------------------------------------- */
 #footer {
 	background-color: #000;
 	color: #FFF;
