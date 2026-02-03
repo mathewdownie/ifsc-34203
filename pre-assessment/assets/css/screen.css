@@ -92,12 +92,16 @@ h4{
 	color: blue;
 }
 
+.img-right{
+	float:right;
+}
 /* -------------------------------------------- Footer --------------------------------------------------- */
 #footer {
 	background-color: #000;
 	color: #FFF;
 	height: 25px;
 }
+/* Can add clear:right/left/both; which will make the img (img-right) stay in the box. */
 #footer h6 {
 	font-size: 12px;
 	line-height: 25px;
