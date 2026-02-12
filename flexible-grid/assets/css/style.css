@@ -1,0 +1,56 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Fix Clearing Bugs */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+main {
+    background-image: url("../img/grid.png");
+    width: 956px;
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+header.primary, footer.primary {
+    width: 95.82%;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 2.09%;
+    padding: 20px;
+    float: left;
+}
+
+#blog {
+    width: 65.27%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 200px;
+    float: left;
+    margin-left: 2.09%;
+}
+
+aside {
+    background: rgba(0, 0, 0, 0.3);
+    width: 28.45%;
+    padding: 20px;
+    float: left;
+    margin-left: 2.09%;
+}
+
