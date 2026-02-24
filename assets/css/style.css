@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+main {
+    width: 80vw;
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+
