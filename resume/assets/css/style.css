@@ -1,7 +1,66 @@
+/*  ------------------------ Box Sizing -----------------------------  */
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
+/*------------------------- Responsive Images -----------------------------*/
+img {
+  max-width: 100%;
+}
+
+/*------------------------- Main Navigation -------------------------------*/
+header {
+  background: transparent;
+  text-align: left;
+  text-shadow: 2px 2px 3px black;
+  padding: 40px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav.primary {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav.primary ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20rem;
+  margin: 20px 0 10px 0;
+}
+
+nav.primary ul li {
+  list-style-type: none;
+}
+
+nav.primary ul a {
+  color: #ffffff;
+  padding: 5px 7.5px;
+  border-radius: 800rem;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+nav.primary a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header-padding {
+  display: flex;
+  align-items: center;
+}
