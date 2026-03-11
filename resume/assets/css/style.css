@@ -30,26 +30,22 @@ main.container {
 }
 
 
+
 .page-title {
   grid-area: title;
 }
-
 #about {
   grid-area: about;
 }
-
 #skills {
   grid-area: skills;
 }
-
 #experience {
   grid-area: experience;
 }
-
 #education {
   grid-area: education;
 }
-
 /*------------------------- Main Navigation -------------------------------*/
 header {
   background: transparent;
@@ -106,3 +102,4 @@ nav.primary a:hover {
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.15);
 }
+
