@@ -1,130 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<header class="container" id="top">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <!-- Main navigation -->
-  <nav class="primary">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-    </ul>
-  </nav>
-</header>
+  <body>
+    <header class="container" id="top">
+      <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+      <!-- Main navigation -->
+      <nav class="primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- Main -->
-<body>
-  <main itemscope itemtype="https://schema.org/Person" class="container">
-    <h1 class="page-title" itemprop="name">Gray Downie</h1>
+    <!-- Main -->
 
-    <section id="about">
-      <h2>Personal Details</h2>
+    <main itemscope itemtype="https://schema.org/Person" class="container">
+      <h1 class="page-title" itemprop="name">Gray Downie</h1>
 
-      <div class="bio">
-        <img itemprop="image" src="./assets/img/Resume-Picture.jpg"
-          alt="Gray Downie">
-        <p itemprop="description">
-          Short Bio Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Deleniti maxime distinctio numquam atque? Accusantium voluptatum alias
-          similique voluptatibus! Sunt sit reiciendis earum, harum iusto
-          accusantium aspernatur ullam tenetur, fuga fugit, quae voluptatem!
-          Iste aliquid veritatis accusantium et cumque minima molestiae ducimus
-          officiis. Beatae ad consequuntur fuga deleniti atque tempore error.
-        </p>
-      </div>
+      <section id="about">
+        <h2 class="visuallyhidden">Personal Details</h2>
 
-      <dl class="details">
-        <dt>Name</dt>
-        <dd itemprop="name">
-          <span itemprop="givenName">Gray</span> <span
-            itemprop="familyName">Downie</span>
-        </dd>
-
-        <dt>Date of birth</dt>
-        <dd><time itemprop="birthDate"
-            datetime="2004-10-04">10/04/2004</time></dd>
-
-        <dt>Nationality</dt>
-        <dd itemprop="nationality">United States</dd>
-
-        <dt>Location</dt>
-        <!-- Keep original text, but model as Place for better schema correctness -->
-        <dd itemprop="homeLocation" itemscope
-          itemtype="https://schema.org/Place">
-          <span itemprop="name">Arkansas</span>
-        </dd>
-
-        <dt>Telephone</dt>
-        <dd>
-          <!-- tel: should be digits; keep visible text as-is -->
-          <a itemprop="telephone" href="tel:501.200.2611">501.200.2611</a>
-        </dd>
-
-        <dt>Email</dt>
-        <dd>
-          <a itemprop="email"
-            href="mailto:mathewdownie1234@mail.com">mathewdownie1234@gmail.com</a>
-        </dd>
-
-        <dt>Address</dt>
-        <dd itemprop="address" itemscope
-          itemtype="https://schema.org/PostalAddress">
-          <span itemprop="streetAddress">12716 Pleasant View Dr</span>
-          <span itemprop="addressLocality">Little Rock</span>
-          <span itemprop="postalCode">72212</span>
-          <span itemprop="addressCountry">USA</span>
-        </dd>
-      </dl>
-
-      <ul class="related-links">
-        <li><a itemprop="sameAs" rel="me"
-            href="https://github.com/mathewdownie"> github</a></li>
-        <li><a itemprop="sameAs" rel="me"
-            href="https://www.linkedin.com/in/mathew-downie-1a331026a/">linkedin</a></li>
-        <li><a itemprop="url" href="./assets/img/Resume.jpg" download>pdf
-            resume</a></li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li class="skill" itemprop="knowsAbout">HTML</li>
-        <li class="skill" itemprop="knowsAbout">Python</li>
-        <li class="skill" itemprop="knowsAbout">JavaScript</li>
-        <li class="skill" itemprop="knowsAbout">CSS</li>
-      </ul>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <!-- current job -->
-      <article class="job">
-        <!-- jobTitle is valid on Person; this is still within Person scope -->
-        <h3 itemprop="jobTitle">Production Associate</h3>
-
-        <!-- worksFor is valid on Person -->
-        <div itemprop="worksFor" itemscope
-          itemtype="https://schema.org/Organization">
-          <span itemprop="name">Kohler</span>
-          <span>June 2025 - August 2025</span>
-
-          <p itemprop="description">Packacked Product, Scanned Packages,
-            Labeling for Shipping, and Factory Experience</p>
-
-          <span itemprop="location" itemscope
-            itemtype="https://schema.org/Place">
-            <a itemprop="url" href="https://www.kohler.com/en">Kohler's
-              Website</a>
-            <span itemprop="address" itemscope
-              itemtype="https://schema.org/PostalAddress">
-              <span itemprop="addressLocality">Arkansas,USA</span>
-            </span>
-          </span>
+        <div class="bio">
+          <img itemprop="image" src="./assets/img/Resume-Picture.jpg"
+            alt="Gray Downie">
+          <p itemprop="description">
+            Gray Downie is a Web Developement and Design major at University of
+            Arkansas at Little Rock,
+            Arkansas. This is a sample resume for an assignment in his
+            responsive design course tought every
+            Spring in the UA Little Rock Information Science Department.
+          </p>
         </div>
-      </article>
+
+        <dl class="details">
+          <dt>Name</dt>
+          <dd itemprop="name">
+            <span itemprop="givenName">Gray</span> <span
+              itemprop="familyName">Downie</span>
+          </dd>
+
+          <dt>Date of birth</dt>
+          <dd><time itemprop="birthDate"
+              datetime="2004-10-04">10/04/2004</time></dd>
+
+          <dt>Nationality</dt>
+          <dd itemprop="nationality">United States</dd>
+
+          <dt>Location</dt>
+          <!-- Keep original text, but model as Place for better schema correctness -->
+          <dd itemprop="homeLocation" itemscope
+            itemtype="https://schema.org/Place">
+            <span itemprop="name">Arkansas</span>
+          </dd>
+
+          <dt>Telephone</dt>
+          <dd>
+            <!-- tel: should be digits; keep visible text as-is -->
+            <a itemprop="telephone" href="tel:501.200.2611">501.200.2611</a>
+          </dd>
+
+          <dt>Email</dt>
+          <dd>
+            <a itemprop="email"
+              href="mailto:mathewdownie1234@mail.com">mathewdownie1234@gmail.com</a>
+          </dd>
+
+          <dt>Address</dt>
+          <dd itemprop="address" itemscope
+            itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">12716 Pleasant View Dr</span>
+            <span itemprop="addressLocality">Little Rock</span>
+            <span itemprop="postalCode">72212</span>
+            <span itemprop="addressCountry">USA</span>
+          </dd>
+        </dl>
+
+        <ul class="related-links">
+          <li><a itemprop="sameAs" rel="me"
+              href="https://github.com/mathewdownie"> github</a></li>
+          <li><a itemprop="sameAs" rel="me"
+              href="https://www.linkedin.com/in/mathew-downie-1a331026a/">linkedin</a></li>
+          <li><a itemprop="url" href="./assets/img/Resume.jpg" download>pdf
+              resume</a></li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li class="skill" itemprop="knowsAbout">HTML</li>
+          <li class="skill" itemprop="knowsAbout">Python</li>
+          <li class="skill" itemprop="knowsAbout">JavaScript</li>
+          <li class="skill" itemprop="knowsAbout">CSS</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <!-- current job -->
+        <article class="job">
+          <!-- jobTitle is valid on Person; this is still within Person scope -->
+          <h3 itemprop="jobTitle">Production Associate</h3>
+
+          <!-- worksFor is valid on Person -->
+          <div itemprop="worksFor" itemscope
+            itemtype="https://schema.org/Organization">
+            <span itemprop="name">Kohler</span>
+            <span>June 2025 - August 2025</span>
+
+            <p itemprop="description">Packacked Product, Scanned Packages,
+              Labeling for Shipping, and Factory Experience</p>
+
+            <span itemprop="location" itemscope
+              itemtype="https://schema.org/Place">
+              <a itemprop="url" href="https://www.kohler.com/en">Kohler's
+                Website</a>
+              <span itemprop="address" itemscope
+                itemtype="https://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Arkansas,USA</span>
+              </span>
+            </span>
+          </div>
+        </article>
+      </section>
 
       <section id="education">
         <h2>Education</h2>
@@ -139,11 +140,12 @@
         </article>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <div id="copyright">
+        &copy; 2026 Gray Downie | <a href="#top">Top</a>
+      </div>
+    </footer>
   </body>
-  <!-- Footer -->
-  <footer>
-    <div id="copyright">
-      &copy; 2026 Gray Downie | <a href="#top">Top</a>
-    </div>
-  </footer>
 </html>
