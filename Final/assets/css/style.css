@@ -1,0 +1,313 @@
+:root {
+    --dark-text: rgb(0, 0, 0);
+    --light-text: rgb(217, 215, 215);
+    --white: rgb(254, 253, 253);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Fix Clearing Bugs */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+/* -----------------------------------------------Main Styles----------------------------------------------- */
+main {
+    width: 130vh;
+    margin: 20px auto;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* -----------------------------------------------Nav Bar----------------------------------------------- */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.navbar .brand {
+    padding: 0.75rem 1rem;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding-right: 1rem;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.navbar-links ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.navbar-links ul li::marker{
+    content: none;
+}
+
+#toggleMenu {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#toggleMenu svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: var(--light-text);
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+}
+
+#toggleMenu .openIcon {
+    display: block;
+}
+
+#toggleMenu .closeIcon {
+    display: none;
+}
+
+#toggleMenu.open .openIcon {
+    display: none;
+}
+
+#toggleMenu.open .closeIcon {
+    display: block;
+}
+
+/* -----------------------------------------------Header and Footer----------------------------------------------- */
+header.primary {
+    background: rgba(0, 0, 0, 0.4);
+    grid-area: 1/1/2/11;
+    background-image: url("../img/header-background-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-text);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.header-text {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer.primary {
+    background: rgba(0, 0, 0, 0.4);
+    grid-area: 3/1/4/11;
+}
+
+/*-------------------------------------------------Dark Mode CSS------------------------------*/
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode header.primary nav ul a {
+    color: white;
+}
+
+#darkToggle {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#darkToggle svg {
+    fill: var(--white);
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+#darkToggle svg:last-child {
+    display: none;
+}
+
+.dark-mode #darkToggle svg:first-child {
+    display: none;
+}
+
+.dark-mode #darkToggle svg:last-child {
+    display: block;
+}
+
+.dark-mode main {
+    border: 1px solid white;
+}
+
+li.dark-mode-toggle {
+    list-style: none;
+}
+/* -----------------------------------------------Content----------------------------------------------- */
+#content {
+    grid-area: 2/1/3/11;
+}
+
+#blog {
+    background: rgba(0, 0, 0, 0.4);
+    grid-area: 1/1/2/11;
+}
+
+aside {
+    background: rgba(0, 0, 0, 0.4);
+    grid-area: 1/8/2/11;
+}
+
+/* -----------------------------------------------Image Slide Show----------------------------------------------- */
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text{
+    color: var(--light-text);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext{
+    color: var(--light-text);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--dark-text);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: var(--light-text);
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* -----------------------------------------------Media Queries----------------------------------------------- */
+@media screen and (max-width: 600px) {
+    #toggleMenu {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links.open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
