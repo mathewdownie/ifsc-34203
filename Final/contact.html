@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Website for Redfield Veterinarian Office"
+      content="Website for Redfield Veterinarian Hospital"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/scripts.js" defer></script>
-    <title>Redfield Veterinarian Office</title>
+    <link rel="icon" href="data:,">
+    <title>Redfield Veterinarian Hospital</title>
   </head>
   <body>
-    <main class="container cf">
+    <main class="container">
       <header class="primary">
         <nav class="navbar">
           <div class="brand">
-            <img class="logo"
+            <img
+              class="logo"
               src="./assets/img/logo.webp"
-              alt="Redfield Veterinarian Office Logo"
+              alt="Redfield Veterinarian Hospital Logo"
             />
           </div>
           <button aria-label="togggle menu" id="toggleMenu">
@@ -59,6 +60,33 @@
               <li><a href="./about.html">About Us</a></li>
               <li><a href="./contact.html">Contact Us</a></li>
             </ul>
+            </div>
+          <li class="dark-mode-toggle">
+            <button id="darkToggle" onclick="darkMode()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+                />
+              </svg>
+            </button>
+          </li>
           </div>
         </nav>
         <div class="header-text">
@@ -66,106 +94,53 @@
           <h2>Bringing compassionate care to your pets</h2>
         </div>
       </header>
-      <section id="content">
-        <section id="blog">
-          <h2>Blog</h2>
-          <article class="post">
-            <header>
-              <time datetime="2026-02-03" class="post-date"
-                >Feburary 3, 2026</time
-              >
-              <h1>
-                <a href="#" rel="bookmark" title="link to this post"
-                  >The Rebel Force</a
-                >
-              </h1>
-            </header>
-            <p>
-              Hey, Luke! May the Force be with you. Alderaan? I'm not going to
-              Alderaan. I've got to go home. It's late, I'm in for it as it is.
-              Obi-Wan is here. The Force is with him. What?! You don't believe
-              in the Force, do you?
-            </p>
-            <h2>The Sith Lords</h2>
-            <p>
-              You're all clear, kid. Let's blow this thing and go home! I care.
-              So, what do you think of her, Han? You are a part of the Rebel
-              Alliance and a traitor! Take her away! You don't believe in the
-              Force, do you?
-            </p>
-            <ul>
-              <li>
-                You are a part of the Rebel Alliance and a traitor! Take her
-                away!
-              </li>
-              <li>Hey, Luke! May the Force be with you.</li>
-              <li>
-                What good is a reward if you ain't around to use it? Besides,
-                attacking that battle station ain't my idea of courage. It's
-                more like&hellip;suicide.
-              </li>
-            </ul>
-            <footer class="post-meta">Post Tags Go here....</footer>
-          </article>
+      <section id="contact">
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions or would like to schedule an appointment,
+            please don't hesitate to contact us. You can reach us by phone at
+            (501) 397-7575
+          </p>
+          <p>
+            Our office is located at 1506 Ar-365, Redfield, AR 72132. We look
+            forward to hearing from you and providing the best care for your
+            pets!
+          </p>
+          <p>Our office hours are Monday to Friday from 10:00 AM to 6:00 PM</p>
+          <p>We only accept cash. We do not accept credit cards or checks.</p>
         </section>
-        <!--#primary -->
-        <aside id="secondary">
-          <div class="widget">
-            <h1>Sample Sidebar Item</h1>
-            <p>
-              Quisque justo erat, varius placerat fermentum vel, iaculis vel
-              ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque
-              vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut
-              risus pulvinar at fringilla sem tristique. Nulla facilisi. Donec
-              posuere euismod purus, eu scelerisque risus pellentesque eu.
-              Vestibulum sed tincidunt metus. <a href="#">Read More</a>&raquo;
-            </p>
-          </div>
-          <div class="widget">
-            <h1>Sample Sidebar Item</h1>
-            <p>
-              Quisque justo erat, varius placerat fermentum vel, iaculis vel
-              ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque
-              vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut
-              risus pulvinar at fringilla sem tristique. Nulla facilisi. Donec
-              posuere euismod purus, eu scelerisque risus pellentesque eu.
-              Vestibulum sed tincidunt metus. <a href="#">Read More</a>&raquo;
-            </p>
-          </div>
-          <div class="widget">
-            <h1>Sample Sidebar Item</h1>
-            <p>
-              Quisque justo erat, varius placerat fermentum vel, iaculis vel
-              ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque
-              vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut
-              risus pulvinar at fringilla sem tristique. Nulla facilisi. Donec
-              posuere euismod purus, eu scelerisque risus pellentesque eu.
-              Vestibulum sed tincidunt metus. <a href="#">Read More</a>&raquo;
-            </p>
-          </div>
-        </aside>
-        <!--#secondary -->
-      </section>
+        </section>
       <!--#content -->
       <footer class="primary">
-            <h3>Contact and Information</h3>
-            <nav>
-                <ul title="Unordered List">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a
-                            href="https://catalog.ualr.edu/preview_program.php?catoid=20&poid=5392">About</a></li>
-                    <li><a href="https://ualr.edu/"
-                            target="_blank">UALR</a></li>
-                    <li><a href="mailto:mathewdownie1234@gmail.com">Contact</a></li>
-                </ul>
-            </nav>
-            <p>This website was created as a student project for educational
-                purposes. The information provided may be incorrect.<p>
-                    <p> &copy; 2025, Gray Downie <a
-                            href="mailto:msdownie@ualr.edu">Email</a>, <a
-                            href="#top">Back to Top</a></p>
-                </footer>
+        <h3>Contact and Information</h3>
+        <nav>
+          <ul title="Unordered List">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <a
+                href="https://catalog.ualr.edu/preview_program.php?catoid=20&poid=5392"
+                >About</a
+              >
+            </li>
+            <li><a href="https://ualr.edu/" target="_blank">UALR</a></li>
+            <li><a href="mailto:mathewdownie1234@gmail.com">Contact</a></li>
+          </ul>
+        </nav>
+        <p>
+          This website was created as a student project for educational
+          purposes. The information provided may be incorrect.
+        </p>
+        <p></p>
+        <p>
+          &copy; 2025, Gray Downie <a href="mailto:msdownie@ualr.edu">Email</a>,
+          <a href="#top">Back to Top</a>
+        </p>
+      </footer>
     </main>
     <!--.container -->
+      <script src="./assets/js/scripts.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </body>
+
 </html>
