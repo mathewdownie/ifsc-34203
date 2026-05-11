@@ -338,13 +338,13 @@ footer .primary{
     }
 
     .brand img {
-        content: url("../img/Logo-Tablet.webp");
+        content: url("/final/assets/img/Logo-Tablet.webp");
     }
 }
 
 
 @media screen and (max-width: 600px) {
     .brand img {
-        content: url("../img/Logo-Mobile.webp");
+        content: url("/final/assets/img/Logo-Mobile.webp");
     }
 }
