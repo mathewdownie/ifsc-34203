@@ -98,55 +98,49 @@
         <div class="slideshow-container">
           <div class="mySlides fade">
             <div class="numbertext">1 / 6</div>
-            <img
-              src="./assets/img/dog-photo-1.png"
-              alt="Dog Photo"
-              style="width: 100%"
-            />
+            <picture>
+              <source media="(max-width: 600px)" srcset="./assets/img/dog-photo-1-small.webp">
+              <img src="./assets/img/dog-photo-1.png" alt="Dog Photo">
+            </picture>
           </div>
           <div class="mySlides fade">
-            <div class="numbertext">1 / 6</div>
-            <img
-              src="./assets/img/dog-photo-2.png"
-              alt="Dog Photo"
-              style="width: 100%"
-            />
+            <div class="numbertext">2 / 6</div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="./assets/img/dog-photo-2-small.webp">
+              <img src="./assets/img/dog-photo-2.png" alt="Dog Photo">
+            </picture>
           </div>
           <div class="mySlides fade">
-            <div class="numbertext">1 / 6</div>
-            <img
-              src="./assets/img/dog-photo-3.png"
-              alt="Dog Photo"
-              style="width: 100%"
-            />
+            <div class="numbertext">3 / 6</div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="./assets/img/dog-photo-3-small.webp">
+              <img src="./assets/img/dog-photo-3.png" alt="Dog Photo">
+            </picture>
           </div>
           <div class="mySlides fade">
-            <div class="numbertext">1 / 6</div>
-            <img
-              src="./assets/img/dog-photo-4.png"
-              alt="Dog Photo"
-              style="width: 100%"
-            />
+            <div class="numbertext">4 / 6</div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="./assets/img/dog-photo-4-small.webp">
+              <img src="./assets/img/dog-photo-4.png" alt="Dog Photo">
+            </picture>
           </div>
           <div class="mySlides fade">
-            <div class="numbertext">1 / 6</div>
-            <img
-              src="./assets/img/chickens.png"
-              alt="Chickens Photo"
-              style="width: 100%"
-            />
+            <div class="numbertext">5 / 6</div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="./assets/img/chickens-small.webp">
+              <img src="./assets/img/chickens.png" alt="Dog Photo">
+            </picture>
           </div>
           <div class="mySlides fade">
-            <div class="numbertext">1 / 6</div>
-            <img
-              src="./assets/img/dog-photo-5.png"
-              alt="Dog Photo"
-              style="width: 100%"
-            />
+            <div class="numbertext">6 / 6</div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="./assets/img/dog-photo-5-small.webp">
+              <img src="./assets/img/dog-photo-5.png" alt="Dog Photo">
+            </picture>
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          <div style="text-align: center">
+          <div>
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -200,7 +194,7 @@
       </footer>
     </main>
     <!--.primary-->
-    <script src="./assets/js/scripts.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/scripts.js" defer></script>
   </body>
 </html>

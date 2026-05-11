@@ -16,7 +16,8 @@ html {
 
 /* -----------------------------------------------Main Styles----------------------------------------------- */
 main {
-    width: 130vh;
+    width: 100%;
+    max-width: 1200px;
     margin: 20px auto;
     border: 1px solid #000;
     display: grid;
@@ -216,6 +217,14 @@ footer .primary{
     display: none;
 }
 
+.mySlides img {
+    width: 100%;
+}
+
+.mySlides div{
+    text-align: center;
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -335,36 +344,6 @@ footer .primary{
 
 
 @media screen and (max-width: 600px) {
-    #toggleMenu {
-        display: block;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links {
-        width: 100%;
-        display: none;
-    }
-
-    .navbar-links.open {
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 100;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
     .brand img {
         content: url("../img/Logo-Mobile.webp");
     }
